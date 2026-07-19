@@ -1,0 +1,23 @@
+# Reference template for a Claude Code profile.
+# `claude-profile add` generates a file like this for you interactively —
+# this is here for manual editing / reference only.
+#
+# Copy to ~/.claude_profiles/<name>.bashrc and fill in the values below.
+
+# Leave unset (comment out) to use the official Anthropic API.
+export ANTHROPIC_BASE_URL=https://api.example.com/anthropic
+
+# Your API key for the provider above.
+export ANTHROPIC_AUTH_TOKEN=
+
+# Model used for normal requests / Opus / Sonnet tiers.
+export ANTHROPIC_MODEL=provider-model-name
+export ANTHROPIC_DEFAULT_OPUS_MODEL=provider-model-name
+export ANTHROPIC_DEFAULT_SONNET_MODEL=provider-model-name
+
+# Cheaper/faster model used for Haiku tier + subagents.
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=provider-flash-model-name
+export CLAUDE_CODE_SUBAGENT_MODEL=provider-flash-model-name
+
+# low | medium | high | max
+export CLAUDE_EFFORT=medium
